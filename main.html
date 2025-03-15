@@ -1,39 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Site</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal Website" />
+  <title>Your Name</title>
+  <style>
+    body {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      font-family: sans-serif;
+      line-height: 1.6;
+      background: #ffffff;
+      color: #000000;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      margin: 0;
+    }
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #0000ee;
+      font-weight: bold;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    section h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Your Name</h1>
     <nav>
-        <h1>My Name</h1>
-        <ul>
-            <li><a href="#me">Me</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <a href="#me">me</a>
+      <a href="#contact">contact</a>
     </nav>
+  </header>
 
-    <header>
-        <img src="assets/profile.jpg" alt="Profile Picture">
-        <h2>Welcome to My Website</h2>
-        <p>A simple personal site hosted on GitHub Pages.</p>
-    </header>
-
+  <main>
     <section id="me">
-        <h2>About Me</h2>
-        <p>Hello! I'm [Your Name]. I enjoy working on cool projects and learning new things.</p>
+      <h2>About Me</h2>
+      <p>Hello! I'm Your Name. I'm interested in [your interests here]. This site is a simple showcase of who I am and how to reach me.</p>
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your-email@example.com</p>
-        <p>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
+      <h2>Contact</h2>
+      <ul>
+        <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
+        <li>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></li>
+      </ul>
     </section>
+  </main>
 
-    <footer>
-        <p>&copy; 2025 My Name. All rights reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Your Name</p>
+  </footer>
 </body>
 </html>
