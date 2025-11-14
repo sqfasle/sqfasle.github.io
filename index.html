@@ -57,6 +57,66 @@
       font-size: 0.9rem;
       color: #888;
     }
+    
+    .image-container {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .image-wrapper {
+      text-align: center;
+      flex: 0 1 200px;
+    }
+    
+    .image-wrapper img {
+      width: 100%;
+      max-width: 200px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+      display: block;
+      margin: 0 auto;
+    }
+    
+    /* Mobile styles */
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+      
+      header {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+      }
+      
+      header h1 {
+        font-size: 1.5rem;
+      }
+      
+      nav a {
+        margin-left: 0;
+      }
+      
+      .image-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .image-wrapper {
+        width: 100%;
+        max-width: 300px;
+      }
+      
+      .image-wrapper img {
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 2/3;
+      }
+    }
   </style>
 </head>
 
@@ -66,18 +126,16 @@
     <nav></nav>
   </header>
 
-  <div style="display: flex; gap: 1rem; margin-bottom: 2rem; justify-content: center;">
-    <div style="text-align: center;">
-      <img src="https://uploads.onecompiler.io/444kkw3uy/444kjugqw/72CF3107-0664-4CFA-B54B-742DA9F01FCC.JPG" 
-           alt="Me at Chubby Skewers in NYC" 
-           style="width: 250px; height: 300px; object-fit: cover; border-radius: 8px; display: block;">
-      <div style="margin-top: 0.5rem; font-size: 0.9rem; color: #b0b0b0;">Me at Chubby Skewers in NYC</div>
+  <div class="image-container">
+    <div class="image-wrapper">
+      <img src="72CF3107-0664-4CFA-B54B-742DA9F01FCC.JPG" 
+           alt="Me at Chubby Skewers in NYC">
+      <div class="image-caption" style="margin-top: 0.5rem; font-size: 0.9rem; color: #b0b0b0;">Me at Chubby Skewers in NYC</div>
     </div>
-    <div style="text-align: center;">
-      <img src="https://uploads.onecompiler.io/444kkw3uy/444kjugqw/download%20(1).png" 
-           alt="My dog Po" 
-           style="width: 250px; height: 300px; object-fit: cover; border-radius: 8px; display: block;">
-      <div style="margin-top: 0.5rem; font-size: 0.9rem; color: #b0b0b0;">My dog Po</div>
+    <div class="image-wrapper">
+      <img src="download.png" 
+           alt="My dog Po">
+      <div class="image-caption" style="margin-top: 0.5rem; font-size: 0.9rem; color: #b0b0b0;">My dog Po</div>
     </div>
   </div>
 
